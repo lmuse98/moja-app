@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +45,9 @@ class App extends Component {
         <div className={styles.containerFlex}>
           <Sidebar />
           <Main cards={this.state.filteredCards} />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     );
